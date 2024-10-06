@@ -11,7 +11,7 @@ cd mirror
 Установка зависимостей для Debian:
 ```sh
 sudo apt update && sudo apt upgrade
-sudo apt install cmake make libev-dev libev4
+sudo apt install build-essential cmake make libev-dev libev4
 ```
 Установка зависимостей для Fedora:
 ```sh
