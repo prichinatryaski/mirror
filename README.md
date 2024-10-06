@@ -18,6 +18,7 @@ sudo apt install cmake make libev-dev libev4
 sudo dnf makecache --refresh
 sudo dnf install cmake make libev
 ```
+Сборка:
 ```sh
 mkdir build
 cd build
