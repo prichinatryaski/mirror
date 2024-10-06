@@ -6,12 +6,13 @@ def main():
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect((host, port))
-        message = "Hello, server!"
+        message = input("Введите сообщение: ")
         s.sendall(message.encode())
         data = s.recv(1024)
-        print(f"Sent: {message} as {message.encode()}") 
+        print(f"Отправлено: '{message}' как {message.encode()}") 
 
-    print(f"Received: {data.decode()}")
+    print(f"Получено: {data.decode()}")
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
